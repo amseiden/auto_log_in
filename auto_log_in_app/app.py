@@ -14,10 +14,10 @@ def activate_application(app_name):
 
 def click_and_paste(x, y, text):
     pyautogui.click(x, y)
-    time.sleep(0.2)  # Mică pauză pentru stabilitate
-    pyperclip.copy(text)  # Copiază textul în clipboard
     time.sleep(0.2)
-    pyautogui.typewrite(pyperclip.paste())  # Folosim clipboard-ul pentru a scrie textul
+    pyperclip.copy(text)
+    time.sleep(0.2)
+    pyautogui.typewrite(pyperclip.paste())
     time.sleep(0.2)
     pyautogui.press('enter')
 
@@ -27,14 +27,14 @@ def main():
     activate_application(app_name)
 
     pyautogui.click(465, 180)
-    time.sleep(2)
+    time.sleep(3)
 
-    # Inserare email
-    click_and_paste(570, 290, "email")
+    # Insert your EMAIL
+    click_and_paste(570, 290, "INSEER_YOUR_EMAIL")
     time.sleep(1)
 
-    # Inserare parolă
-    click_and_paste(574, 347, "pass")
+    # Insert your PASSWORD then follow the steps from help.txt
+    click_and_paste(574, 347, "INSEER_YOUR_PASSSWOER")
     time.sleep(1)
 
     pyautogui.press('enter')

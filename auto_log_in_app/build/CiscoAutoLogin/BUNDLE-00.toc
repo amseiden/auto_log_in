@@ -1,0 +1,3 @@
+([('CiscoAutoLogin',
+   '/Users/amseiden/Documents/dc/tools/auto_log_in/auto_log_in_app/dist/CiscoAutoLogin',
+   'EXECUTABLE')],)

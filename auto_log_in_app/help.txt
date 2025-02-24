@@ -1,0 +1,14 @@
+CUSTOMIZE THE APP
+Insert your credentials then follow this Termianl commands:
+
+1. Refresh the app:
+pyinstaller --onefile --windowed --hidden-import=pyautogui --name="CiscoAutoLogin" app.py
+
+2. Move to Applications folder:
+cp -R dist/CiscoAutoLogin.app /Applications/
+
+3. Run manually:
+/Applications/CiscoAutoLogin.app/Contents/MacOS/CiscoAutoLogin
+
+4. Allow macos run this app:
+xattr -dr com.apple.quarantine /Applications/CiscoAutoLogin.app
