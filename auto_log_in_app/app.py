@@ -19,21 +19,22 @@ def click_and_paste(x, y, text):
     pyautogui.hotkey('command', 'v')
     time.sleep(0.2)
     pyautogui.press('enter')
-    time.sleep(2)
 
 
 def main():
     app_name = "Cisco AnyConnect Secure Mobility Client"
     activate_application(app_name)
 
-    time.sleep(2)
-
     pyautogui.click(465, 180)
-    time.sleep(2)
+    time.sleep(3)
 
+    #insert email
     click_and_paste(570, 290, "email")
+    time.sleep(1)
 
+    #insert pass
     click_and_paste(574, 347, "pass")
+    time.sleep(1)
 
     pyautogui.press('enter')
 
